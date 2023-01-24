@@ -17,8 +17,8 @@ def is_enabled(value, default):
 # Mandatory variables for the bot to start
 API_ID = 1923471
 API_HASH = "fcdc178451cd234e63faefd38895c991"
-BOT_TOKEN = "5718312254:AAH-IRpGjc7e-8nfV1TJhgebzBfbbgMVHKA"
-#BOT_TOKEN1 = "5477637816:AAFuRC-kgmPQJbRoZZe9d1gy7l98r0EHT2Q"
+#BOT_TOKEN = "5718312254:AAH-IRpGjc7e-8nfV1TJhgebzBfbbgMVHKA"
+BOT_TOKEN = "5477637816:AAFuRC-kgmPQJbRoZZe9d1gy7l98r0EHT2Q"
 ADMINS = (
     [int(i.strip()) for i in os.environ.get("ADMINS", 880087645).split(",")]
     if os.environ.get("ADMINS")
@@ -50,7 +50,7 @@ WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", "")  # image when someone hit /s
 LINK_BYPASS = is_enabled(
     (os.environ.get("LINK_BYPASS", "False")), False
 )  # if true, urls will be bypassed
-BASE_SITE = os.environ.get("BASE_SITE", "tnlink.in")  # your shortener site domain
+BASE_SITE = os.environ.get("BASE_SITE", "earnspace.in")  # your shortener site domain
 
 # For Admin use
 CHANNELS = is_enabled((os.environ.get("CHANNELS", "True")), True)
