@@ -50,12 +50,12 @@ WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", "")  # image when someone hit /s
 LINK_BYPASS = is_enabled(
     (os.environ.get("LINK_BYPASS", "False")), False
 )  # if true, urls will be bypassed
-BASE_SITE = os.environ.get("BASE_SITE", "earnspace.in")  # your shortener site domain
+BASE_SITE = os.environ.get("BASE_SITE", "atglinks.com")  # your shortener site domain
 
 # For Admin use
 CHANNELS = is_enabled((os.environ.get("CHANNELS", "True")), True)
 CHANNEL_ID = (
-    [int(i.strip()) for i in os.environ.get("CHANNEL_ID").split(" ")]
+    [int(i.strip()) for i in os.environ.get("CHANNEL_ID", "-100798404894").split(" ")]
     if os.environ.get("CHANNEL_ID")
     else []
 )
